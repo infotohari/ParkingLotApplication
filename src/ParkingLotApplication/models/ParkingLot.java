@@ -7,7 +7,7 @@ public class ParkingLot extends BaseModel{
     private ParkingLotStatus parkingLotStatus;
     private List<Gate> gates;
     private List<VehicleType> supportVehicleTypes;
-    private SpotAssignmentStrategy spotAssignmentStrategy;
+    private SpotAssignmentStrategyType spotAssignmentStrategyType;
 
     public List<ParkingFloor> getParkingFloors() {
         return parkingFloors;
@@ -41,11 +41,12 @@ public class ParkingLot extends BaseModel{
         this.supportVehicleTypes = supportVehicleTypes;
     }
 
-    public SpotAssignmentStrategy getSpotAssignmentStrategy() {
-        return spotAssignmentStrategy;
+    public SpotAssignmentStrategyType getSpotAssignmentStrategy() {
+        return spotAssignmentStrategyType;
     }
 
-    public void setSpotAssignmentStrategy(SpotAssignmentStrategy spotAssignmentStrategy) {
-        this.spotAssignmentStrategy = spotAssignmentStrategy;
+    public void setSpotAssignmentStrategy(SpotAssignmentStrategyType spotAssignmentStrategyType) {
+        this.spotAssignmentStrategyType = spotAssignmentStrategyType;
     }
 }
+
